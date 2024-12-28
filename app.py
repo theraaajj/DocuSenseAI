@@ -9,8 +9,9 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load environment variables
-load_dotenv()
+# Load environment variables ( when in a local environment )
+# load_dotenv()
+
 
 # Configure the GenAI API key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
